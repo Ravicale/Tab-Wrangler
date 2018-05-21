@@ -1,12 +1,12 @@
 {
     "manifest_version": 2,
-    "name": "SwapTab",
+    "name": "Tab Wrangler",
     "author": "Richard Wiedenroth",
-    "short_name": "ST",
-    "version": "0.5",
+    "short_name": "TR",
+    "version": "0.6",
 
-    "description": "Allows for one to switch to the previous or next tab via keyboard shortcut.",
-    //"homepage_url": to be added later,
+    "description": "Provides various new commands to wrangle your tabs.",
+    "homepage_url": "https://github.com/Ravicale/Tab-Wrangler"
     "icons": {
         "48": "icons/icon-48.png"
     },
