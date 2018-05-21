@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "SwapTab",
+    "author": "Richard Wiedenroth",
+    "short_name": "ST",
+    "version": "0.5",
+
+    "description": "Allows for one to switch to the previous or next tab via keyboard shortcut.",
+    //"homepage_url": to be added later,
+    "icons": {
+        "48": "icons/icon-48.png"
+    },
+    
+    "commands": {
+       "Next-Tab": {
+            "suggested_key": {
+                "default": "Ctrl+Period"
+            },
+        "description": "Swap to the next tab."
+        },
+        "Previous-Tab": {
+            "suggested_key": {
+                "default": "Ctrl+Comma"
+            },
+        "description": "Swap to the previous tab."
+        }
+    },
+
+    "background": {
+        "scripts": ["js/tabwrangler.js"]
+    }
+}
