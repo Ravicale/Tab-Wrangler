@@ -1,32 +1,38 @@
 {
-    "manifest_version": 2,
-    "name": "Tab Wrangler",
-    "author": "Richard Wiedenroth",
-    "short_name": "TR",
-    "version": "0.6",
+	"manifest_version": 2,
+	"name": "Tab Wrangler",
+	"author": "Richard Wiedenroth",
+	"short_name": "TR",
+	"version": "0.6",
 
-    "description": "Provides various new commands to wrangle your tabs.",
-    "homepage_url": "https://github.com/Ravicale/Tab-Wrangler"
-    "icons": {
-        "48": "icons/icon-48.png"
-    },
-    
-    "commands": {
-       "Next-Tab": {
-            "suggested_key": {
-                "default": "Ctrl+Period"
-            },
-        "description": "Swap to the next tab."
-        },
-        "Previous-Tab": {
-            "suggested_key": {
-                "default": "Ctrl+Comma"
-            },
-        "description": "Swap to the previous tab."
-        }
-    },
+	"description": "Provides various new commands to wrangle your tabs.",
+	"homepage_url": "https://github.com/Ravicale/Tab-Wrangler",
+	"icons": {
+		"48": "icons/icon-48.png"
+	},
+	
+	"commands": {
+	   "Next-Tab": {
+			"suggested_key": {
+				"default": "Ctrl+Period"
+			},
+		"description": "Swap to the next tab."
+		},
+		"Previous-Tab": {
+			"suggested_key": {
+				"default": "Ctrl+Comma"
+			},
+		"description": "Swap to the previous tab."
+		},
+		"Mute-Unmute-All": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+L"
+			},
+		"description": "Mute/Unmute all tabs in current window."
+		}
+	},
 
-    "background": {
-        "scripts": ["js/tabwrangler.js"]
-    }
+	"background": {
+		"scripts": ["js/tabwrangler.js"]
+	}
 }
