@@ -1,25 +1,3 @@
-function SwitchNextTab() {
-	browser.tabs.query({active: true, currentWindow: true}, function (tabs) {
-		var currIndex = tabs[0].index;
-		browser.tabs.query({currentWindow: true}, function (tabs) {
-			if (currIndex < tabs.length - 1) {
-				browser.tabs.update(tabs[currIndex+1].id, {active: true});
-			}
-		});
-	});
-}
-
-function SwitchPrevTab() {
-	browser.tabs.query({active: true, currentWindow: true}, function (tabs) {
-		var currIndex = tabs[0].index;
-		browser.tabs.query({currentWindow: true}, function (tabs) {
-			if (currIndex > 0) {
-				browser.tabs.update(tabs[currIndex-1].id, {active: true});
-			}
-		});
-	});
-}
-
 function MuteUnmuteAll() {
 	browser.tabs.query({currentWindow: true}, function (tabs) {
 		for (i = 0; i < tabs.length; i++) {
@@ -49,16 +27,10 @@ function MuteUnmuteAlmostAll() {
 }
 
 browser.commands.onCommand.addListener(function(command) {
-	if (command == "Next-Tab") {
-		SwitchNextTab();
-	}
-	if (command == "Previous-Tab") {
-		SwitchPrevTab();
-	}
 	if (command == "Mute-Unmute-All") {
 		MuteUnmuteAll();
 	}
-		if (command == "Mute-Unmute-Almost-All") {
+	if (command == "Mute-Unmute-Almost-All") {
 		MuteUnmuteAlmostAll();
 	}
 });

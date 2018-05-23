@@ -12,18 +12,6 @@
 	},
 	
 	"commands": {
-	   "Next-Tab": {
-			"suggested_key": {
-				"default": "Ctrl+Period"
-			},
-		"description": "Swap to the next tab."
-		},
-		"Previous-Tab": {
-			"suggested_key": {
-				"default": "Ctrl+Comma"
-			},
-		"description": "Swap to the previous tab."
-		},
 		"Mute-Unmute-All": {
 			"suggested_key": {
 				"default": "Alt+M"
