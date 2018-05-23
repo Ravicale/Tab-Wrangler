@@ -26,9 +26,15 @@
 		},
 		"Mute-Unmute-All": {
 			"suggested_key": {
-				"default": "Ctrl+Shift+L"
+				"default": "Alt+M"
 			},
 		"description": "Mute/Unmute all tabs in current window."
+		},
+		"Mute-Unmute-Almost-All": {
+			"suggested_key": {
+				"default": "Alt+Shift+M"
+			},
+		"description": "Mute/Unmute all tabs but the active one in current window."
 		}
 	},
 
